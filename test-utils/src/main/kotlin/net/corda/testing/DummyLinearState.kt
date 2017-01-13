@@ -16,7 +16,7 @@ class DummyLinearContract: Contract {
             FilterOn(clause, { states -> states.filterIsInstance<State>() }),
             emptyList())
 
-    class State(
+    data class State(
             override val linearId: UniqueIdentifier = UniqueIdentifier(),
             override val contract: Contract = DummyLinearContract(),
             override val participants: List<CompositeKey> = listOf(),
