@@ -197,7 +197,7 @@ interface VaultService {
     fun generateSpend(tx: TransactionBuilder,
                       amount: Amount<Currency>,
                       to: CompositeKey,
-                      onlyFromParties: Set<Party>? = null): Pair<TransactionBuilder, List<CompositeKey>>
+                      onlyFromParties: Set<AnonymousParty>? = null): Pair<TransactionBuilder, List<CompositeKey>>
 
     /**
      * Return [ContractState]s of a given [Contract] type and list of [Vault.StateStatus]

@@ -487,7 +487,7 @@ class TwoPartyTradeFlowTests {
     private fun LedgerDSL<TestTransactionDSLInterpreter, TestLedgerDSLInterpreter>.fillUpForBuyer(
             withError: Boolean,
             owner: CompositeKey,
-            issuer: Party,
+            issuer: AnonymousParty,
             notary: Party): Pair<Vault<ContractState>, List<WireTransaction>> {
         val interimOwnerKey = MEGA_CORP_PUBKEY
         // Bob (Buyer) has some cash he got from the Bank of Elbonia, Alice (Seller) has some commercial paper she
